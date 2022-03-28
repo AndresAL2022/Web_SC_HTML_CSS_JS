@@ -1,0 +1,186 @@
+
+:root{
+
+    --color-principal:rgba(155, 155, 155, 0.5);
+    --color-principal-opaco: rgba(70, 117, 177, 0.9);
+    --color-blanco-transp: rgba(255, 255, 255, 0.9);
+    --color-blanco-tarjeta: rgba(255, 255, 255, 0.7);
+
+}
+
+@font-face {
+    font-family: "jetbrains";
+    src: url(../fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf);
+}
+
+:root{
+
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+
+}
+
+*{
+
+    box-sizing: border-box;
+
+}
+
+body{
+
+    background-color: var();
+    font-family: "Jetbrains";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+
+    background-image: url(../img/loginwallpaper.jpeg);
+
+}
+
+.container{
+
+    background-color: var(--color-blanco-transp);
+    border-radius: 5px;
+    box-shadow: 0 2px rgba(0,0,0, 0.3);
+    width: 400px;
+
+}
+
+.h2{
+
+    text-align: center;
+    margin: 0 0 20px;
+
+}
+
+.form{
+
+    padding: 30px 40px;
+
+}
+
+.form_control{
+
+    margin-bottom: 10px;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+.form_control label{
+
+    color: #777;
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+.form_control input{
+
+    border: 2px solid #f0f0f0;
+    border-radius:4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+
+}
+
+.form_control input:focus{
+
+    outline: 0;
+    border-color: #777;
+
+}
+
+.form_control.success input{
+
+    border-color: var(--success-color);
+
+}
+
+.form_control.error input{
+
+    border-color: var(--error-color);
+
+}
+
+.form_control small{
+
+    color: var(--error-color);
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+
+}
+
+.form_control.error small{
+
+    visibility: visible;
+
+}
+
+.form button{
+
+    cursor: pointer;
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    color: white;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 50%;
+    height: 50%;
+
+}
+
+.form a{
+
+    cursor: pointer;
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 50%;
+    height: 60%;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.form button:hover{
+
+    border: 2px solid #3498db;
+    color: #3498db;
+    background-color:white;
+
+    transition: 0.5s;
+
+}
+
+.form a:hover{
+
+    border: 2px solid #3498db;
+    color: #3498db;
+    background-color:white;
+
+    transition: 0.5s;
+
+}
+
+.form_control_buttons{
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 10px;
+
+}
